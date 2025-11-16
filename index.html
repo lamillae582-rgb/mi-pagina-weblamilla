@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+         <!-- Configuración básica del documento -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi primera Pagina Web :D</title>
+         <!-- Icono que aparece en la pestaña del navegador -->
+        <link rel="shortcut icon" href="/icon/html-5.png" type="image/x-icon">
+    </head>
+    <body>
+        <h1>David Javier Valencia Lamilla</h1>
+        <p>Si puedes imaginarlo, puedes crearlo</p>
+        <img src="/IMG/Davis.jpeg" alt="Foto De David" width="300">
+        <!-- Menú de navegación -->
+        <nav>
+                     <!--Anclaje-->
+                     <a id="Sobremi"></a>
+        </nav>
+        <!-- Sección "Sobre mí" con información personal -->
+        <section id="sobremi">
+        <p><strong>Bachiller en el Área de Sistemas.</strong> Actualmente cursando el tercer semestre
+             de la carrera de <em>Ingeniería en Sistemas de la Información</em> en la 
+             <mark>Universidad Técnica de Babahoyo</mark>, donde continúo mi formación académica
+             y desarrollo mis habilidades tecnológicas.</p>
+             <a href="#Sobremi">Sobremi</a>
+             </section>
+              <!-- Lista de intereses o logros personales -->
+             <p>Lista de Intereses o Logros</p>
+             <ul type="circle">
+                <li>Dominio en lenguajes de marcado y estilo (ej: HTML5, CSS)</li>
+                <li>Alcanzar un ranking o nivel significativo en un juego específico</li>
+                <li>Participación regular en ligas o torneos Futbol</li>
+             </ul>
+              <!-- Tabla de habilidades técnicas -->
+             <p>Tabla de Actividades</p>
+             <style>
+                /* Estilos para la tabla */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <!-- Estructura de la tabla -->
+             <table>
+                 <!-- Encabezado de la tabla -->
+                <thead>
+                    <tr>
+                        <th>Habilidades</th>
+                        <th>Nivel</th>
+                    </tr>
+                </thead>
+<!-- Cuerpo de la tabla con los datos -->
+                <tbody>
+                    <tr>
+                        <td>HTML5</td>
+                        <td>Basico</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>Intermedio</td>
+                    </tr>
+                    <tr>
+                        <td>PSeInt</td>
+                        <td>Intermedio</td>
+                    </tr>
+                </tbody>
+ <!-- Pie de tabla con información resumen -->
+                <tfoot>
+                    <tr>
+                           <!-- Celda que ocupa 2 columnas -->
+                        <td colspan="2">Total habilidades: 3 | Actualizado: 2025</td>
+                    </tr>
+                </tfoot>
+             </table>
+             <br>
+             <!-- Reproductor de audio -->
+             <audio controls>
+             <source src="/Audios/AudioPre.mp3">
+             <!-- El navegador mostrará controles de reproducción -->
+            </audio>
+              <!-- Formulario de contacto -->
+            <p>Formulario de Contacto</p>
+            <form>
+                  <!-- Agrupación del formulario con título -->
+<fieldset>
+<legend>Formulario</legend>
+  <!-- Campo para correo electrónico -->
+<label for="email">Correo:</label>
+<input type="email" id="email" name="email" required><br>
+ <!-- Campo para edad con validación mínima -->
+<label for="edad">Edad:</label>
+<input type="number" id="edad" name="edad" min="18"><br>
+ <!-- Lista desplegable para seleccionar país -->
+<label for="pais">País:</label>
+<select id="pais" name="pais">
+<option value="ec">Ecuador</option>
+<option value="pe">Peru</option>
+<option value="bo">Bolivia</option>
+<option value="ve">Venezuela</option>
+<option value="co">Colombia</option>
+
+</select><br>
+     <!-- Botones de opción para género -->
+<label>Género:</label>
+<input type="radio" name="genero" value="M"> Masculino
+<input type="radio" name="genero" value="F"> Femenino<br>
+ <!-- Área de texto para comentarios -->
+<textarea name="comentarios" rows="4" cols="30">Escribe comentarios aquí...
+</textarea><br>
+<!-- Botón para enviar el formulario -->
+<input type="submit" value="Registrar">
+</fieldset>
+</form>
+ <!-- Pie de página con redes sociales y derechos de autor -->
+            <footer>
+        <div class="social-links">
+             <!-- Enlaces a redes sociales (se abren en nueva pestaña) -->
+            <a href="https://www.facebook.com/share/1GxgRqHvHy/" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/istdavidj?igsh=MTVkeW1paDdmMmwwag==" target="_blank">Instagram</a>
+        </div>
+         <!-- Información de derechos de autor con año actual automático -->
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> -Universidad Técnica de Babahoyo</p>
+    </footer>
+    </body>
+</html>
